@@ -7,6 +7,53 @@
 /* SECTION ONE */
 
 /* SECTION TWO */
+#latest-news {
+    background-color: black;
+    padding: 20px;
+}
+#latest-news .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+#latest-news .header h1 {
+    color: white;
+    font-size: 2rem;
+}
+#latest-news .header p {
+    color: gray;
+    font-size: 1rem;
+    padding-top: 10px;
+    cursor: pointer;
+}
+#latest-news .news {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#latest-news .news div {
+    position: relative;
+}
+#latest-news .news div img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    opacity: 0.7;
+}
+#latest-news .news div h3 {
+    color: white;
+    position: absolute;
+    top: 76%;
+    left: 10px;
+}
+#latest-news .news div p {
+    color: gray;
+    position: absolute;
+    top: 88%;
+    font-size: 0.8rem;
+    left: 10px;
+}
+
 
 /* SECTION THREE */
 
