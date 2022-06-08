@@ -6,6 +6,152 @@
 
 /* SECTION ONE */
 
+header{
+  background-color: black;
+  height: 500px;
+  color: white;
+  position: relative;
+  display: block;
+}
+
+h2 {
+  float: left;
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+  margin-left: 40px;
+  margin: 20px;
+}
+
+.navbar {
+  overflow: hidden;
+  height: 20%;
+  text-align: center;
+  padding-left: 50px;
+}
+
+.navbar a {
+  float: none;
+  font-size: 18px;
+  text-align: center; 
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  justify-content: center;
+  padding: 10px 16px;
+}
+
+.dropdown {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  padding: 14px 16px;
+  background-color: inherit;
+  color: white;
+  margin-top: 20px;
+}
+
+
+.dpct {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dpct a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dpct a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dpct {
+  display: block;
+}
+
+.navbtn {
+  float: right;
+  width: 100px;
+  height: 40px;
+  background-color: red;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.4s;
+  border-radius: 7px;
+  color: white;
+  margin: 20px;
+  margin-right: 30px;
+}
+
+#headerComment {
+  float: left;
+  text-align: left;
+  box-sizing: content-box;
+  margin-right: 65%;
+  padding: 50px;
+  border: 20px;
+  display: inline;
+  margin-bottom: 30%;
+  border-bottom: 50px;
+}
+
+h1 {
+  padding: 20px;
+  word-spacing: 10px;
+  font-size: 40px;
+}
+
+p {
+  padding: 20px;
+}
+
+.joinbtn, .learnbtn {
+  margin: 20px 0 20px 20px;
+  padding: 5px;
+  transition: 0.3s;
+}
+
+
+.joinbtn {
+  width: 120px;
+  height: 40px;
+  display: inline-block;
+  background-color: red;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 7px;
+  color: white;
+}
+
+.learnbtn {
+  width: 80px;
+  height: 40px;
+  display: inline-block;
+  background-color: #111;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 7px;
+  color: white;
+}
+
 /* SECTION TWO */
 
 /* SECTION THREE */
