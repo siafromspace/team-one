@@ -10,8 +10,9 @@ header{
   background-color: black;
   height: 500px;
   color: white;
-  position: relative;
+  position: absolute;
   display: block;
+  min-width: 100px;
 }
 
 h2 {
@@ -100,13 +101,12 @@ h2 {
 #headerComment {
   float: left;
   text-align: left;
-  box-sizing: content-box;
-  margin-right: 65%;
-  padding: 50px;
-  border: 20px;
+  box-sizing: border-box;
+  margin: 15px 40px;
+  padding: 10px;
   display: inline;
-  margin-bottom: 30%;
-  border-bottom: 50px;
+  width: 30%; 
+  height: 50%;
 }
 
 h1 {
