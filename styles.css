@@ -54,16 +54,24 @@
     left: 10px;
 }
 
+@media (max-width: 798px) {
+    #latest-news .news {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 
 /* SECTION THREE */
 .section-three{
-    background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.2)), url("/section-three-image.jpeg");
+    background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.2)), url("img/section-three-image.jpeg");
     background-size: cover;
     background-position: center;
     height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
+    line-height: 1.6;
 }
 .section-three-text{
     display: flex;
@@ -154,6 +162,16 @@ footer .connect div {
 footer .connect div i {
     padding: 1px;
     cursor: pointer;
+}
+
+@media (max-width: 798px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        padding: 2rem;
+    }
 }
 
 
