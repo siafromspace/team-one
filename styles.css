@@ -15,6 +15,52 @@
 /* SECTION FIVE */
 
 /* SECTION SIX */
+footer {
+    background-color: black;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    padding: 50px 40px 40px 40px;
+}
+footer .logo {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+footer .logo img {
+    width: 100%;
+}
+
+footer .links {
+    display: flex;
+    gap: 50px;
+}
+footer .links h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+footer .links ul {
+    list-style: none;
+}
+footer .links ul li {
+    margin-bottom: 5px;
+}
+footer .links ul li a {
+    text-decoration: none;
+    color: gray;
+}
+footer .connect h3 {
+    margin-bottom: 10px;
+}
+footer .connect div {
+    display: flex;
+    gap: 20px;
+}
+footer .connect div i {
+    padding: 1px;
+    cursor: pointer;
+}
 
 
 
