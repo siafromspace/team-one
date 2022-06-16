@@ -10,9 +10,7 @@ header{
   background-color: black;
   height: 500px;
   color: white;
-  position: absolute;
   display: block;
-  min-width: 100px;
 }
 
 h2 {
