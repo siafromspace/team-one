@@ -6,52 +6,72 @@
 
 /* SECTION ONE */
 
-header{
+header {
   background-color: black;
-  height: 500px;
-  color: white;
-  display: block;
-}
-
-h2 {
-  float: left;
-  font-size: 20px;
-  padding: 10px;
-  color: white;
-  margin-left: 40px;
-  margin: 20px;
+  display: flex;
+  height: auto;
+  padding: 2rem 3rem;
+  flex-direction: column;
+  font-size: 1.2rem;
 }
 
 .navbar {
-  overflow: hidden;
-  height: 20%;
-  text-align: center;
-  padding-left: 50px;
+  display: inline-flex;
+  padding-bottom: 2.5rem;
 }
 
-.navbar a {
-  float: none;
-  font-size: 18px;
-  text-align: center; 
-  color: white;
+.nav-link {
+  display: inline-flex;
+  flex-direction: row;
+  pad
+}
+
+.nav-link a, .nav-link {
+  padding: 10px;
+}
+
+.nav-link a {
   text-decoration: none;
-  transition: 0.3s;
-  justify-content: center;
-  padding: 10px 16px;
+  color: white;
+}
+.nav-img, .nav-link, .nav-btn{
+    width: 50.3%;
 }
 
+.main-head {
+  display: flex;
+  color: white;
+  flex-direction: row;
+}
+
+.intro-head {
+  flex: 40%;
+  padding-right: 3rem;
+}
+
+.intro-head h1, .intro-head p {
+    padding: 1.5rem 1rem;
+}
+
+.intro-head h1 {
+  font-size: 3rem;
+  word-spacing: 5px;
+}
+
+.intro-img {
+  flex: 60%;
+}
 .dropdown {
   overflow: hidden;
   display: inline-block;
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;
+  font-size: 1.1rem;
   border: none;
-  padding: 14px 16px;
   background-color: inherit;
   color: white;
-  margin-top: 20px;
+  padding: 0 3px;
 }
 
 
@@ -80,57 +100,34 @@ h2 {
   display: block;
 }
 
-.navbtn {
+.nav-btn button {
   float: right;
-  width: 100px;
-  height: 40px;
+  width: 30%;
   background-color: red;
+  font-size: 1rem;
   padding: 10px;
-  font-size: 14px;
   cursor: pointer;
   text-align: center;
   transition: 0.4s;
   border-radius: 7px;
   color: white;
-  margin: 20px;
-  margin-right: 30px;
-}
-
-#headerComment {
-  float: left;
-  text-align: left;
-  box-sizing: border-box;
-  margin: 15px 40px;
-  padding: 10px;
-  display: inline;
-  width: 30%; 
-  height: 50%;
-}
-
-h1 {
-  padding: 20px;
-  word-spacing: 10px;
-  font-size: 40px;
-}
-
-p {
-  padding: 20px;
+  
 }
 
 .joinbtn, .learnbtn {
   margin: 20px 0 20px 20px;
-  padding: 5px;
+  padding: 10px;
   transition: 0.3s;
 }
 
 
 .joinbtn {
-  width: 120px;
-  height: 40px;
+  width: 40%;
+  height: 15%;
   display: inline-block;
   background-color: red;
   padding: 10px;
-  font-size: 14px;
+  font-size: 1rem;
   cursor: pointer;
   text-align: center;
   border-radius: 7px;
@@ -138,17 +135,216 @@ p {
 }
 
 .learnbtn {
-  width: 80px;
-  height: 40px;
+  width: 25%;
+  height: 15%;
   display: inline-block;
   background-color: #111;
   padding: 10px;
-  font-size: 14px;
+  font-size: 0.9rem;
   cursor: pointer;
   text-align: center;
   border-radius: 7px;
   color: white;
 }
+
+@media screen and (max-width: 1056px) {
+  header {
+      padding: 1.5rem 2rem;
+      font-size: 1rem;
+  }
+  .intro-head {
+    padding-right: 2rem;
+  }
+  .intro-head h1 {
+    font-size: 2.5rem;
+  }
+  .joinbtn, .learnbtn {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+  .nav-btn button {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  header {
+      padding: 1.5rem 1.5rem;
+      font-size: 1rem;
+  }
+  .navbar {
+    padding-bottom: 1.5rem;
+  }
+  .intro-head {
+    padding-right: 1rem;
+  }
+  .intro-head h1 {
+    font-size: 2.3rem;
+  }
+  .joinbtn, .learnbtn {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+  .nav-btn button {
+    width: 50%;
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  header {
+      padding: 1.5rem;
+      font-size: 1rem;
+  }
+  .main-head {
+    flex-direction: column;
+  }
+  .nav-img img {
+    width: 40%;
+  }
+  .navbar {
+    padding-bottom: 1.5rem;
+  }
+  .nav-link {
+    width: 80%;
+  }
+  .nav-link a, .nav-link {
+    padding: 2px;
+  }
+  .intro-head h1, .intro-head p, .intro-img {
+    padding: 1rem;
+  }
+  .intro-head p {
+    font-size: 1.1rem;
+  }
+  .dropdown .dropbtn {
+    font-size: inherit;
+  }
+  .intro-head h1 {
+    font-size: 2.5rem;
+  }
+  .joinbtn, .learnbtn {
+    padding: 8px;
+    font-size: 1rem;
+  }
+  .nav-btn button {
+    width: 60%;
+    padding: 6px;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+      padding: 1.5rem;
+      font-size: 0.9rem;
+  }
+  .main-head {
+    flex-direction: column;
+  }
+  .nav-img img {
+    width: 50%;
+    padding-left: 8px;
+  }
+  .navbar {
+    padding-bottom: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .nav-link a, .nav-link {
+    padding: 0 10px;
+  }
+  .nav-img, .nav-btn {
+    width: 50%;
+  }
+  .dropdown .dropbtn {
+    font-size: inherit;
+  }
+  .nav-link {
+    width: 80%;
+    order: -1;
+    flex: 1 0 100%;
+    justify-content: center;
+    padding-bottom: 10px;
+    align-items: stretch;
+  }
+  .intro-head p {
+    font-size: 0.9rem;
+  }
+  .intro-head h1 {
+    font-size: 2rem;
+  }
+  .intro-head h1, .intro-head p {
+    padding: 0.7rem;
+  }
+  .joinbtn, .learnbtn {
+    margin: 10px 0 10px 10px;
+    padding: 8px;
+    font-size: inherit;
+  }
+  .nav-btn button {
+    width: 60%;
+    padding: 7px;
+    font-size: inherit;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header {
+      padding: 1.5rem;
+      font-size: 0.8rem;
+  }
+  .main-head {
+    flex-direction: column;
+  }
+  .nav-img img {
+    width: 40%;
+    padding-left: 8px;
+  }
+  .navbar {
+    padding-bottom: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .nav-link a, .nav-link {
+    padding: 0 10px;
+  }
+  .nav-img, .nav-btn {
+    width: 50%;
+  }
+  .dropdown .dropbtn {
+    font-size: inherit;
+  }
+  .nav-link {
+    width: 80%;
+    order: -1;
+    flex: 1 0 100%;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+  .intro-head p {
+    font-size: 0.9rem;
+  }
+  .intro-head h1 {
+    font-size: 1.5rem;
+  }
+  .intro-head h1, .intro-head p {
+    padding: 0.7rem;
+  }
+  .joinbtn, .learnbtn {
+    padding: 4px;
+    font-size: inherit;
+  }
+  .nav-btn button {
+    width: 60%;
+    padding: 4px;
+    font-size: inherit;
+    justify-content: flex-end;
+  }
+  
+}
+
+
 
 /* SECTION TWO */
 
