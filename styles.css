@@ -6,6 +6,346 @@
 
 /* SECTION ONE */
 
+header {
+  background-color: black;
+  display: flex;
+  height: auto;
+  padding: 2rem 3rem;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+
+.navbar {
+  display: inline-flex;
+  padding-bottom: 2.5rem;
+}
+
+.nav-link {
+  display: inline-flex;
+  flex-direction: row;
+  pad
+}
+
+.nav-link a, .nav-link {
+  padding: 10px;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: white;
+}
+.nav-img, .nav-link, .nav-btn{
+    width: 50.3%;
+}
+
+.main-head {
+  display: flex;
+  color: white;
+  flex-direction: row;
+}
+
+.intro-head {
+  flex: 40%;
+  padding-right: 3rem;
+}
+
+.intro-head h1, .intro-head p {
+    padding: 1.5rem 1rem;
+}
+
+.intro-head h1 {
+  font-size: 3rem;
+  word-spacing: 5px;
+}
+
+.intro-img {
+  flex: 60%;
+}
+.dropdown {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.dropdown .dropbtn {
+  font-size: 1.1rem;
+  border: none;
+  background-color: inherit;
+  color: white;
+  padding: 0 3px;
+}
+
+
+.dpct {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dpct a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dpct a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dpct {
+  display: block;
+}
+
+.nav-btn button {
+  float: right;
+  width: 30%;
+  background-color: red;
+  font-size: 1rem;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.4s;
+  border-radius: 7px;
+  color: white;
+  
+}
+
+.joinbtn, .learnbtn {
+  margin: 20px 0 20px 20px;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+
+.joinbtn {
+  width: 40%;
+  height: 15%;
+  display: inline-block;
+  background-color: red;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 7px;
+  color: white;
+}
+
+.learnbtn {
+  width: 25%;
+  height: 15%;
+  display: inline-block;
+  background-color: #111;
+  padding: 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 7px;
+  color: white;
+}
+
+@media screen and (max-width: 1056px) {
+  header {
+      padding: 1.5rem 2rem;
+      font-size: 1rem;
+  }
+  .intro-head {
+    padding-right: 2rem;
+  }
+  .intro-head h1 {
+    font-size: 2.5rem;
+  }
+  .joinbtn, .learnbtn {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+  .nav-btn button {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  header {
+      padding: 1.5rem 1.5rem;
+      font-size: 1rem;
+  }
+  .navbar {
+    padding-bottom: 1.5rem;
+  }
+  .intro-head {
+    padding-right: 1rem;
+  }
+  .intro-head h1 {
+    font-size: 2.3rem;
+  }
+  .joinbtn, .learnbtn {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+  .nav-btn button {
+    width: 50%;
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  header {
+      padding: 1.5rem;
+      font-size: 1rem;
+  }
+  .main-head {
+    flex-direction: column;
+  }
+  .nav-img img {
+    width: 40%;
+  }
+  .navbar {
+    padding-bottom: 1.5rem;
+  }
+  .nav-link {
+    width: 80%;
+  }
+  .nav-link a, .nav-link {
+    padding: 2px;
+  }
+  .intro-head h1, .intro-head p, .intro-img {
+    padding: 1rem;
+  }
+  .intro-head p {
+    font-size: 1.1rem;
+  }
+  .dropdown .dropbtn {
+    font-size: inherit;
+  }
+  .intro-head h1 {
+    font-size: 2.5rem;
+  }
+  .joinbtn, .learnbtn {
+    padding: 8px;
+    font-size: 1rem;
+  }
+  .nav-btn button {
+    width: 60%;
+    padding: 6px;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+      padding: 1.5rem;
+      font-size: 0.9rem;
+  }
+  .main-head {
+    flex-direction: column;
+  }
+  .nav-img img {
+    width: 50%;
+    padding-left: 8px;
+  }
+  .navbar {
+    padding-bottom: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .nav-link a, .nav-link {
+    padding: 0 10px;
+  }
+  .nav-img, .nav-btn {
+    width: 50%;
+  }
+  .dropdown .dropbtn {
+    font-size: inherit;
+  }
+  .nav-link {
+    width: 80%;
+    order: -1;
+    flex: 1 0 100%;
+    justify-content: center;
+    padding-bottom: 10px;
+    align-items: stretch;
+  }
+  .intro-head p {
+    font-size: 0.9rem;
+  }
+  .intro-head h1 {
+    font-size: 2rem;
+  }
+  .intro-head h1, .intro-head p {
+    padding: 0.7rem;
+  }
+  .joinbtn, .learnbtn {
+    margin: 10px 0 10px 10px;
+    padding: 8px;
+    font-size: inherit;
+  }
+  .nav-btn button {
+    width: 60%;
+    padding: 7px;
+    font-size: inherit;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header {
+      padding: 1.5rem;
+      font-size: 0.8rem;
+  }
+  .main-head {
+    flex-direction: column;
+  }
+  .nav-img img {
+    width: 40%;
+    padding-left: 8px;
+  }
+  .navbar {
+    padding-bottom: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .nav-link a, .nav-link {
+    padding: 0 10px;
+  }
+  .nav-img, .nav-btn {
+    width: 50%;
+  }
+  .dropdown .dropbtn {
+    font-size: inherit;
+  }
+  .nav-link {
+    width: 80%;
+    order: -1;
+    flex: 1 0 100%;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+  .intro-head p {
+    font-size: 0.9rem;
+  }
+  .intro-head h1 {
+    font-size: 1.5rem;
+  }
+  .intro-head h1, .intro-head p {
+    padding: 0.7rem;
+  }
+  .joinbtn, .learnbtn {
+    padding: 4px;
+    font-size: inherit;
+  }
+  .nav-btn button {
+    width: 60%;
+    padding: 4px;
+    font-size: inherit;
+    justify-content: flex-end;
+  }
+  
+}
+
+
+
 /* SECTION TWO */
 #latest-news {
     background-color: black;
