@@ -470,6 +470,7 @@ header {
     justify-content: center;
     height: 100%;
     gap: 2rem;
+    padding: 2rem;
 }
 .download-heading {
     font-size: 3rem;
