@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* SECTION ONE */
@@ -23,7 +24,6 @@ header {
 .nav-link {
   display: inline-flex;
   flex-direction: row;
-  pad
 }
 
 .nav-link a, .nav-link {
@@ -404,9 +404,11 @@ header {
 
 /* SECTION THREE */
 .section-three{
-    background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.2)), url("img/section-three-image.jpeg");
-    background-size: cover;
-    background-position: center;
+    background: url("img/dylan-hunter-vSiE9-jN2wo-unsplash.jpg");
+    background-size: 100% 100%;
+    background-position: 100% 100%;
+    box-shadow:  30px 30px 20px 40px rgba(0,0,0,.7) inset,
+    -30px -30px 20px 40px rgba(0,0,0,.7) inset;
     height: 500px;
     display: flex;
     justify-content: center;
@@ -425,14 +427,12 @@ header {
 .section-three-text>h1{
     font-weight: bolder;
     font-size: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
 }
 
 .section-three-text>p{
     text-align: center;
     font-size: 16px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 30px;
 
 }
@@ -453,6 +453,58 @@ header {
     }
 }
 /* SECTION FOUR */
+#section-four {
+    height: 500px;
+    background-image: url("img/li-zhang-XL4mx7kXZtY-unsplash.jpg");
+    background-size: 100% 100%;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    color: white;
+    box-shadow: 30px 30px 20px 40px rgba(0,0,0,.7) inset,
+                -30px -30px 20px 40px rgba(0,0,0,.7) inset;
+}
+.download-showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 2rem;
+}
+.download-heading {
+    font-size: 3rem;
+}
+.download-text {
+    font-size: 1.5rem;
+}
+.download-btns {
+    display: flex;
+    gap: 1.5rem;
+    cursor: pointer;
+}
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    height: 3.8rem;
+    width: 12rem;
+    background-color: black;
+    border: 1px solid white;
+}
+.download-btn p {
+    font-size: 0.8rem;
+}
+.download-btn p span {
+    display: inline-block;
+    font-size: 1.1rem;
+}
+@media (max-width: 798px) {
+    .download-btns {
+        flex-direction: column;
+    }
+}
+
 
 /* SECTION FIVE */
 
