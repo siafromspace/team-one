@@ -60,7 +60,15 @@ header {
 
 .intro-img {
   flex: 60%;
+  align-items: stretch;
+  padding-left: 100px;
 }
+
+.intro-img img {
+    height: 50%;
+    width: 80%;
+}
+
 .dropdown {
   overflow: hidden;
   display: inline-block;
@@ -123,7 +131,6 @@ header {
 
 .joinbtn {
   width: 40%;
-  height: 15%;
   display: inline-block;
   background-color: red;
   padding: 10px;
@@ -136,7 +143,6 @@ header {
 
 .learnbtn {
   width: 25%;
-  height: 15%;
   display: inline-block;
   background-color: #111;
   padding: 10px;
@@ -181,6 +187,16 @@ header {
   .intro-head h1 {
     font-size: 2.3rem;
   }
+  .intro-img {
+  flex: 60%;
+  align-items: stretch;
+  padding-left: 50px;
+}
+
+.intro-img img {
+    height: 60%;
+    width: 80%;
+}
   .joinbtn, .learnbtn {
     padding: 10px;
     font-size: 0.8rem;
@@ -200,8 +216,13 @@ header {
   .main-head {
     flex-direction: column;
   }
-  .nav-img img {
-    width: 40%;
+  .intro-img {
+    text-align: center;
+    padding: 6rem;
+  }
+
+  .intro-img img {
+    width: 100%;
   }
   .navbar {
     padding-bottom: 1.5rem;
@@ -212,7 +233,7 @@ header {
   .nav-link a, .nav-link {
     padding: 2px;
   }
-  .intro-head h1, .intro-head p, .intro-img {
+  .intro-head h1, .intro-head p {
     padding: 1rem;
   }
   .intro-head p {
@@ -246,6 +267,17 @@ header {
   .nav-img img {
     width: 50%;
     padding-left: 8px;
+
+  }
+
+  .intro-img {
+    text-align: center;
+    padding: 1rem;
+    align-items: stretch;
+  }
+
+  .intro-img img {
+    width: 100%;
   }
   .navbar {
     padding-bottom: 1.5rem;
