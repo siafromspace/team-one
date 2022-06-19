@@ -10,7 +10,6 @@
 header {
   background-color: black;
   display: flex;
-  height: auto;
   padding: 2rem 3rem;
   flex-direction: column;
   font-size: 1.2rem;
@@ -61,13 +60,13 @@ header {
 
 .intro-img {
   flex: 60%;
-  align-items: stretch;
   padding-left: 100px;
+  height: 100px;
 }
 
 .intro-img img {
-    height: 50%;
     width: 80%;
+    height: 400px;
 }
 
 .dropdown {
@@ -188,11 +187,14 @@ header {
 
 @media screen and (max-width: 870px) {
   header {
-      padding: 1.5rem 1.5rem;
-      font-size: 1rem;
+    padding: 1.5rem 1.5rem;
+    font-size: 1rem;
   }
   .navbar {
     padding-bottom: 1.5rem;
+  }
+  .nav-link a, .nav-link {
+    padding: 2px;
   }
   .intro-head {
     padding-right: 1rem;
@@ -201,6 +203,7 @@ header {
     font-size: 2.3rem;
   }
   .intro-img {
+<<<<<<< Updated upstream
   flex: 60%;
   align-items: stretch;
   padding-left: 50px;
@@ -219,6 +222,15 @@ header {
     width: 8rem;
   }
   .learnbtn {
+=======
+    flex: 60%;
+    padding-left: 50px;
+  }
+  .intro-img img {
+    width: 80%;
+  }
+  .joinbtn, .learnbtn {
+>>>>>>> Stashed changes
     padding: 10px;
     font-size: 0.8rem;
     width: 6rem;
@@ -246,11 +258,12 @@ header {
   }
   .intro-img {
     text-align: center;
-    padding: 6rem;
+    padding: 3rem;
   }
 
   .intro-img img {
-    width: 100%;
+    width: 80%;
+    height: 350px;
   }
   .navbar {
     padding-bottom: 1.5rem;
