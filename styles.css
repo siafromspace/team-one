@@ -203,26 +203,6 @@ header {
     font-size: 2.3rem;
   }
   .intro-img {
-<<<<<<< Updated upstream
-  flex: 60%;
-  align-items: stretch;
-  padding-left: 50px;
-}
-.nav-img img {
-    width: 60%;
-}
-
-.intro-img img {
-    height: 60%;
-    width: 80%;
-}
-  .joinbtn {
-    padding: 10px;
-    font-size: 0.8rem;
-    width: 8rem;
-  }
-  .learnbtn {
-=======
     flex: 60%;
     padding-left: 50px;
   }
@@ -230,10 +210,12 @@ header {
     width: 80%;
   }
   .joinbtn, .learnbtn {
->>>>>>> Stashed changes
     padding: 10px;
     font-size: 0.8rem;
-    width: 6rem;
+    width: 5rem;
+  }
+  .joinbtn {
+    width: 8rem;
   }
   .nav-btn {
     margin-top: 1rem;
