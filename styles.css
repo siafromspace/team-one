@@ -484,8 +484,12 @@ header {
         display: block;
     }
 }
+
+
 /* SECTION FOUR */
-#section-four {
+
+/* SECTION FIVE */
+#section-five {
     height: 500px;
     background-image: url("img/li-zhang-XL4mx7kXZtY-unsplash.jpg");
     background-size: 100% 100%;
@@ -536,10 +540,15 @@ header {
     .download-btns {
         flex-direction: column;
     }
+    .download-heading {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .download-text {
+        font-size: 1rem;
+        text-align: center;
+    }
 }
-
-
-/* SECTION FIVE */
 
 /* SECTION SIX */
 footer {
