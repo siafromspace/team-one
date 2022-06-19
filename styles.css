@@ -242,7 +242,7 @@ header {
     flex-direction: column;
   }
   .nav-img img {
-    width: 60%;
+    width: 80%;
   }
   .intro-img {
     text-align: center;
@@ -261,9 +261,9 @@ header {
   .nav-link a, .nav-link {
     padding: 2px;
   }
-  .nav-btn {
+  /* .nav-btn {
     padding-top: 1rem;
-  }
+  } */
   .intro-head h1, .intro-head p {
     padding: 1rem;
   }
@@ -278,9 +278,15 @@ header {
     font-size: 2.5rem;
     text-align: center;
   }
-  .joinbtn, .learnbtn {
+  .joinbtn {
     padding: 8px;
     font-size: 1rem;
+    width: 10rem;
+  }
+  .learnbtn {
+    padding: 8px;
+    font-size: 1rem;
+    width: 5rem;
   }
   .nav-btn button {
     width: 60%;
@@ -302,7 +308,7 @@ header {
     flex-direction: column;
   }
   .nav-img img {
-    width: 50%;
+    width: 70%;
     padding-left: 8px;
 
   }
@@ -324,7 +330,7 @@ header {
     padding: 0 10px;
   }
   .nav-btn {
-    margin-top: 0.6rem;
+    margin-top: 1rem;
   }
   .nav-img, .nav-btn {
     width: 50%;
@@ -368,7 +374,7 @@ header {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 399px) {
   header {
       padding: 1.5rem;
       font-size: 0.8rem;
