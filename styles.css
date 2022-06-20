@@ -694,7 +694,7 @@ header {
 
 .card-border {
     margin: 0.5rem;
-    height: 334px;
+    height: 95.4%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -738,7 +738,7 @@ header {
     font-size: 10px;
 }
 
-@media only screen and (max-width: 480px) and (min-width: 320px) {
+@media only screen and (max-width: 600px) {
     html,
     body {
         width: 100%;
@@ -758,7 +758,7 @@ header {
         margin-top: 0rem;
     }
     .hero-card {
-        width: 350px;
+        width: 320px;
         height: 450px;
         margin-bottom: 2rem;
     }
@@ -777,7 +777,7 @@ header {
     }
 }
 
-@media only screen and (max-width: 768px) and (min-width: 481px) {
+@media only screen and (max-width: 700px) and (min-width: 600px) {
     html,
     body {
         width: 100%;
@@ -786,36 +786,37 @@ header {
         overflow-x: hidden;
     }
     .container .hero-head-title {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
     .container .hero-head-text {
         width: 96%;
-        font-size: 1.8em;
+        font-size: 1.2rem;
     }
     .hero-cards {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
         margin-top: 0rem;
     }
     .hero-card {
-        width: 510px;
-        height: 800px;
+        width: 250px;
+        height: 400px;
         margin-bottom: 3rem;
     }
     .hero-card .card-title {
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .hero-card .card-text {
-        font-size: 2.3rem;
+        font-size: 0.9rem;
     }
     .card-content .card-cancel p,
     .card-content .card-heart p {
         font-weight: bold;
-        font-size: 3rem;
+        font-size: 1.2rem;
         text-align: center;
     }
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 768px) {
+@media only screen and (max-width: 969px) and (min-width: 700px) {
     html,
     body {
         width: 100%;
@@ -824,31 +825,70 @@ header {
         overflow-x: hidden;
     }
     .container .hero-head-title {
-        font-size: 5rem;
+        font-size: 3rem;
     }
     .container .hero-head-text {
-        width: 98%;
-        font-size: 2.3em;
+        width: 96%;
+        font-size: 1.2rem;
     }
     .hero-cards {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
         margin-top: 0rem;
     }
     .hero-card {
-        width: 950px;
-        height: 1150px;
-        margin-bottom: 4rem;
+        width: 300px;
+        height: 400px;
+        margin-bottom: 3rem;
     }
     .hero-card .card-title {
-        font-size: 4rem;
+        font-size: 2rem;
     }
     .hero-card .card-text {
-        font-size: 2.7rem;
+        font-size: 0.9rem;
     }
     .card-content .card-cancel p,
     .card-content .card-heart p {
         font-weight: bold;
-        font-size: 3.5rem;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 1240px) and (min-width: 969px) {
+    html,
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .container .hero-head-title {
+        font-size: 3rem;
+    }
+    .container .hero-head-text {
+        width: 60%;
+        font-size: 1.4em;
+    }
+    .hero-cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        margin-top: 0rem;
+    }
+    .hero-card {
+        width: 350px;
+        height: 480px;
+        margin-bottom: 4rem;
+    }
+    .hero-card .card-title {
+        font-size: 2rem;
+    }
+    .hero-card .card-text {
+        font-size: 1.2rem;
+    }
+    .card-content .card-cancel p,
+    .card-content .card-heart p {
+        font-weight: bold;
+        font-size: 1.2rem;
         text-align: center;
     }
 }
