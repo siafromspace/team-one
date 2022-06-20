@@ -566,6 +566,135 @@ header {
 
 
 /* SECTION FOUR */
+#hero {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+}
+.container .hero-head-title {
+    font-size: 2.5rem;
+}
+.container .hero-head-text {
+    color: #ddd;
+    width: 30%;
+    text-align: center;
+}
+.hero-cards {
+    margin-top: 2rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: space-around;
+    column-gap: 3rem;
+    row-gap: 1rem;
+}
+.hero-card {
+    width: 250px;
+    height: 350px;
+    background: url("img/MAC.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.card-two {
+    background: url("img/monster.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card-three {
+    background: url("img/nicole.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card-four {
+    background: url("img/sarah.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card-five {
+    background: url("img/soul.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card-six {
+    background: url("img/thanos.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card-seven {
+    background: url("img/zack.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card-eight {
+    background: url("img/zasta.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card-border {
+    margin: 0.5rem;
+    height: 334px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0.5rem;
+    gap: 1rem;
+    border: 1px solid black;
+}
+.hero-card .card-title {
+    font-size: 1.2rem;
+    text-align: center;
+}
+.hero-card .card-text {
+    font-size: 0.9rem;
+    text-align: center;
+    color:#ddd;
+}
+.card-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+.card-content .card-cancel p, 
+.card-content .card-heart p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.card-progress .card-progress-name {
+    text-align: center;
+    background-color: black;
+    border: 1px white solid;
+    padding: 0.2rem;
+}
+.card-progress .card-progress-life i {
+    font-size: 10px;
+}
+
+
 
 /* SECTION FIVE */
 #section-five {
