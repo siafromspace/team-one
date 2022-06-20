@@ -255,6 +255,7 @@ header {
   }
   .nav-link a, .nav-link {
     padding: 2px;
+    font-size: 0.9rem;
   }
   /* .nav-btn {
     padding-top: 1rem;
