@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    transition: .7s linear;
 }
 
 
@@ -533,7 +535,9 @@ header {
 
 
 /* SECTION THREE */
-
+section{
+    background-color: black;
+}
 .section-three {
     background: url("img/dylan-hunter-vSiE9-jN2wo-unsplash.jpg");
     background-size: 100% 100%;
@@ -895,7 +899,10 @@ header {
 
 
 /* SECTION FIVE */
+.sec-five{
+    background-color: black;
 
+}
 #section-five {
     height: 500px;
     background-image: url("img/li-zhang-XL4mx7kXZtY-unsplash.jpg");
